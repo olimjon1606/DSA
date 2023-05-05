@@ -1,10 +1,18 @@
-const triangle = function (numRows) {
-    let triangle = []
-    for (i = 0; i < numRows; i++) {
-        let row = Array(i + 1).fill(1)
-        for (j = 1; j < i; j++) {
-            row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+/*
+ * @param {number} numRows
+ * @return {number[][]}
+ */
+var generate = function(numRows) {
+    const triangle = [];
+    for (let i = 0; i < numRows; i++) {
+        const row = Array(i + 1).fill(1); // initialize current row with 1s
+        for (let j = 1; j < i; j++) {
+            // compute the value of each element in the current row based on the previous row
+            row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
         }
+        triangle.push(row); // add the current row to the triangle
     }
+    return triangle;
+};
 
-}
+console.log(generate(5))
