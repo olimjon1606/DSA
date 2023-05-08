@@ -4,6 +4,8 @@ class Node {
         this.next = next;
     }
 }
+
+
 const node5 = new Node(5);
 const node4 = new Node(4, node5);
 const node3 = new Node(3, node4);
