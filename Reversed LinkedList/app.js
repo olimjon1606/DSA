@@ -22,14 +22,12 @@ function reverseLinkedList(head) {
     let current = head;
     let prev = null;
     let next = null;
-
     while (current !== null) {
         next = current.next;
         current.next = prev;
         prev = current;
         current = next;
     }
-
     return prev;
 }
 // let head = [1, 2, 3, 4, , 5, 6, 7, 8, 9, 10, 11, 12, 13]
