@@ -4,10 +4,7 @@ const grid = [
     [1, 1, 0, 0, 0],
     [0, 0, 0, 1, 0]
 ];
-/*
- * @param {character[][]} grid
- * @return {number}
- */
+
 function numIslands(grid) {
     console.log("hello")
 
@@ -34,7 +31,6 @@ function numIslands(grid) {
         dfs(i, j - 1);
         dfs(i, j + 1);
     };
-
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {
             if (grid[i][j] === '1') {
@@ -43,7 +39,6 @@ function numIslands(grid) {
             }
         }
     }
-
     return count;
 };
 console.log(numIslands());
