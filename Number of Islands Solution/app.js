@@ -4,25 +4,20 @@ const grid = [
     [1, 1, 0, 0, 0],
     [0, 0, 0, 1, 0]
 ];
-
 function numIslands(grid) {
     console.log("hello")
     if (!grid || grid.length === 0) {
         return 0;
     }
     console.log("help");
-
     const m = grid.length;
     const n = grid[0].length;
     console.log("hello")
-
     let count = 0;
-
     const dfs = (i, j) => {
         if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] === '0') {
             return;
         }
-
         grid[i][j] = '0';
 
         dfs(i - 1, j);
