@@ -1,4 +1,3 @@
-
 var generate = function(numRows) {
     const triangle = [];
     for (let i = 0; i < numRows; i++) {
