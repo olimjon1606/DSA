@@ -13,10 +13,7 @@ const node3 = new Node(3, node4);
 const node2 = new Node(2, node3);
 const node1 = new Node(1, node2);
 
-console.log(reverseLinkedList(node1)); // Output: Node { value: 5, next: Node { value: 4, next: Node { value: 3, next: Node { value: 2, next: Node { value: 1, next: null } } } } } 
-
-
-
+console.log(reverseLinkedList(node1)); 
 
 function reverseLinkedList(head) {
     let current = head;
