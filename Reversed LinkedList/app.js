@@ -22,7 +22,6 @@ function reverseLinkedList(head) {
     let current = head;
     let prev = null;
     let next = null;
-    // console.log(current.next)
 
     while (current !== null) {
         next = current.next;
