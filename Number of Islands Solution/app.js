@@ -7,7 +7,6 @@ const grid = [
 
 function numIslands(grid) {
     console.log("hello")
-
     if (!grid || grid.length === 0) {
         return 0;
     }
