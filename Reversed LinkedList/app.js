@@ -12,9 +12,7 @@ const node4 = new Node(4, node5);
 const node3 = new Node(3, node4);
 const node2 = new Node(2, node3);
 const node1 = new Node(1, node2);
-
 console.log(reverseLinkedList(node1)); 
-
 function reverseLinkedList(head) {
     let current = head;
     let prev = null;
