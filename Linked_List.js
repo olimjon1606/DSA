@@ -1,5 +1,4 @@
 function isPalindrome(head) {
-  // Base case: empty or single-node list is always a palindrome
   if (!head || !head.next) {
     return true;
   }
