@@ -1,5 +1,5 @@
 function twoSum(numbers, target) {
-    let array = []; // pointer for rightmost element
+    let array = []; 
     for (i = 0; i < numbers.length; i++) {
       for (j = i + 1; j < numbers.length; j++) {
         if (numbers[i] + numbers[j] === target) {
