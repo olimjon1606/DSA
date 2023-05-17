@@ -4,7 +4,6 @@ function isPalindrome(head) {
     return true;
   }
 
-  // Find the middle node of the list
   let slow = head;
   let fast = head;
   while (fast.next && fast.next.next) {
@@ -12,7 +11,6 @@ function isPalindrome(head) {
     fast = fast.next.next;
   }
 
-  // Reverse the second half of the list
   let prev = null;
   let curr = slow.next;
   while (curr) {
