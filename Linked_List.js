@@ -21,9 +21,7 @@ function isPalindrome(head) {
       prev = curr;
       curr = next;
     }
-  
-    // Compare the first and second halves of the list
-    let p1 = head;
+      let p1 = head;
     let p2 = prev;
     while (p2) {
       if (p1.val !== p2.val) {
