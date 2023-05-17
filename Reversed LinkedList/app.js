@@ -23,5 +23,4 @@ function reverseLinkedList(head) {
     }
     return prev;
 }
-// let head = [1, 2, 3, 4, , 5, 6, 7, 8, 9, 10, 11, 12, 13]
 console.log(reverseLinkedList(Node))
